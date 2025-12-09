@@ -941,3 +941,48 @@ footer p {
  . n u t r i t i o n - a r t i c l e   h 3 : f i r s t - c h i l d   {   m a r g i n - t o p :   0 ;   }  
  . n u t r i t i o n - a r t i c l e   p   {   c o l o r :   v a r ( - - t e x t - s e c o n d a r y ) ;   l i n e - h e i g h t :   1 . 9 ;   m a r g i n - b o t t o m :   v a r ( - - s p a c i n g - 3 ) ;   f o n t - s i z e :   v a r ( - - t e x t - b a s e ) ;   }  
  
+/* ===== Stylish Underlines for Important Text ===== */
+.highlight-primary {
+  background: linear-gradient(transparent 60%, rgba(232, 93, 117, 0.25) 60%);
+  padding: 0 0.25rem;
+  border-bottom: 2px solid #E85D75;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: all var(--transition-base);
+  position: relative;
+}
+
+.highlight-primary:hover {
+  background: linear-gradient(transparent 60%, rgba(232, 93, 117, 0.35) 60%);
+  border-bottom-width: 3px;
+}
+
+.highlight-secondary {
+  background: linear-gradient(transparent 60%, rgba(99, 102, 241, 0.2) 60%);
+  padding: 0 0.25rem;
+  border-bottom: 2px solid #6366F1;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: all var(--transition-base);
+  position: relative;
+}
+
+.highlight-secondary:hover {
+  background: linear-gradient(transparent 60%, rgba(99, 102, 241, 0.3) 60%);
+  border-bottom-width: 3px;
+}
+
+.highlight-accent {
+  background: linear-gradient(transparent 60%, rgba(251, 191, 36, 0.25) 60%);
+  padding: 0 0.25rem;
+  border-bottom: 2px solid #FBBF24;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: all var(--transition-base);
+  position: relative;
+}
+
+.highlight-accent:hover {
+  background: linear-gradient(transparent 60%, rgba(251, 191, 36, 0.35) 60%);
+  border-bottom-width: 3px;
+}
