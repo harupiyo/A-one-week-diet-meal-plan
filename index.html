@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ダイエット中でも美味しく楽しめる一週間簡単レシピ。低カロリーで栄養バランスの取れた献立を毎日提案します。">
+  <title>ダイエット簡単レシピ | 一週間献立プラン</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="container">
+      <div class="logo">🥗 ダイエットレシピ</div>
+      <ul class="nav-links">
+        <li><a href="#home">ホーム</a></li>
+        <li><a href="#features">特徴</a></li>
+        <li><a href="#weekly-plan">一週間プラン</a></li>
+        <li><a href="#recipes">レシピ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>美味しく、楽しく、健康的に</h1>
+      <p>ダイエット中でも満足できる、簡単で美味しい一週間レシピをご提案。<br>栄養バランスを考えた献立で、理想の体型を手に入れましょう。</p>
+      <a href="#weekly-plan" class="cta-button">一週間プランを見る</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>3つの特徴</h2>
+        <p class="section-subtitle">ダイエットを成功に導くための、こだわりのポイント</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>簡単調理</h3>
+          <p>15〜30分で完成する時短レシピ。忙しい毎日でも続けられます。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>低カロリー</h3>
+          <p>1日1,200〜1,400kcalに設定。無理なく健康的にダイエット。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💪</div>
+          <h3>栄養バランス</h3>
+          <p>タンパク質・ビタミン・ミネラルをバランスよく摂取できます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Weekly Plan Section -->
+  <section id="weekly-plan" class="weekly-plan">
+    <div class="container">
+      <div class="section-header">
+        <h2>一週間献立プラン</h2>
+        <p class="section-subtitle">毎日の食事を楽しみながら、健康的にダイエット</p>
+      </div>
+
+      <!-- Day Tabs -->
+      <div class="day-tabs">
+        <button class="day-tab active" data-day="monday">月曜日</button>
+        <button class="day-tab" data-day="tuesday">火曜日</button>
+        <button class="day-tab" data-day="wednesday">水曜日</button>
+        <button class="day-tab" data-day="thursday">木曜日</button>
+        <button class="day-tab" data-day="friday">金曜日</button>
+        <button class="day-tab" data-day="saturday">土曜日</button>
+        <button class="day-tab" data-day="sunday">日曜日</button>
+      </div>
+
+      <!-- Monday -->
+      <div id="monday" class="day-content active">
+        <div class="meals-grid">
+          <div class="meal-card" data-recipe="greek-yogurt">
+            <img src="images/greek_yogurt_berries.png" alt="ギリシャヨーグルトとベリー" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">朝食</span>
+              <h3 class="meal-title">ギリシャヨーグルトとベリー</h3>
+              <div class="meal-meta">
+                <span>🔥 250kcal</span>
+                <span>⏱️ 5分</span>
+              </div>
+            </div>
+          </div>
+          <div class="meal-card" data-recipe="grilled-chicken">
+            <img src="images/grilled_chicken_salad.png" alt="鶏胸肉のグリルサラダ" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">昼食</span>
+              <h3 class="meal-title">鶏胸肉のグリルサラダ</h3>
+              <div class="meal-meta">
+                <span>🔥 380kcal</span>
+                <span>⏱️ 20分</span>
+              </div>
+            </div>
+          </div>
+          <div class="meal-card" data-recipe="tofu-steak">
+            <img src="images/tofu_steak_vegetables.png" alt="豆腐ステーキと野菜炒め" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">夕食</span>
+              <h3 class="meal-title">豆腐ステーキと野菜炒め</h3>
+              <div class="meal-meta">
+                <span>🔥 420kcal</span>
+                <span>⏱️ 25分</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="daily-total">
+          <h3>1日の合計カロリー</h3>
+          <div class="total-calories">1,050kcal</div>
+        </div>
+      </div>
+
+      <!-- Tuesday -->
+      <div id="tuesday" class="day-content">
+        <div class="meals-grid">
+          <div class="meal-card" data-recipe="oatmeal">
+            <img src="images/oatmeal_banana.png" alt="オートミールとバナナ" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">朝食</span>
+              <h3 class="meal-title">オートミールとバナナ</h3>
+              <div class="meal-meta">
+                <span>🔥 280kcal</span>
+                <span>⏱️ 10分</span>
+              </div>
+            </div>
+          </div>
+          <div class="meal-card" data-recipe="salmon-poke">
+            <img src="images/salmon_poke_bowl.png" alt="サーモンのポキボウル" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">昼食</span>
+              <h3 class="meal-title">サーモンのポキボウル</h3>
+              <div class="meal-meta">
+                <span>🔥 450kcal</span>
+                <span>⏱️ 15分</span>
+              </div>
+            </div>
+          </div>
+          <div class="meal-card" data-recipe="chicken-tomato">
+            <img src="images/grilled_chicken_salad.png" alt="鶏むね肉のトマト煮込み" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">夕食</span>
+              <h3 class="meal-title">鶏むね肉のトマト煮込み</h3>
+              <div class="meal-meta">
+                <span>🔥 400kcal</span>
+                <span>⏱️ 30分</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="daily-total">
+          <h3>1日の合計カロリー</h3>
+          <div class="total-calories">1,130kcal</div>
+        </div>
+      </div>
+
+      <!-- Wednesday -->
+      <div id="wednesday" class="day-content">
+        <div class="meals-grid">
+          <div class="meal-card" data-recipe="smoothie-bowl">
+            <img src="images/smoothie_bowl.png" alt="スムージーボウル" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">朝食</span>
+              <h3 class="meal-title">スムージーボウル</h3>
+              <div class="meal-meta">
+                <span>🔥 300kcal</span>
+                <span>⏱️ 10分</span>
+              </div>
+            </div>
+          </div>
+          <div class="meal-card" data-recipe="spring-noodle">
+            <img src="images/salmon_poke_bowl.png" alt="野菜たっぷり春雨スープ" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">昼食</span>
+              <h3 class="meal-title">野菜たっぷり春雨スープ</h3>
+              <div class="meal-meta">
+                <span>🔥 320kcal</span>
+                <span>⏱️ 20分</span>
+              </div>
+            </div>
+          </div>
+          <div class="meal-card" data-recipe="white-fish">
+            <img src="images/tofu_steak_vegetables.png" alt="白身魚のホイル焼き" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">夕食</span>
+              <h3 class="meal-title">白身魚のホイル焼き</h3>
+              <div class="meal-meta">
+                <span>🔥 380kcal</span>
+                <span>⏱️ 25分</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="daily-total">
+          <h3>1日の合計カロリー</h3>
+          <div class="total-calories">1,000kcal</div>
+        </div>
+      </div>
+
+      <!-- Thursday -->
+      <div id="thursday" class="day-content">
+        <div class="meals-grid">
+          <div class="meal-card" data-recipe="avocado-toast">
+            <img src="images/greek_yogurt_berries.png" alt="アボカドトースト" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">朝食</span>
+              <h3 class="meal-title">アボカドトースト</h3>
+              <div class="meal-meta">
+                <span>🔥 320kcal</span>
+                <span>⏱️ 10分</span>
+              </div>
+            </div>
+          </div>
+          <div class="meal-card" data-recipe="tofu-miso">
+            <img src="images/tofu_steak_vegetables.png" alt="豆腐とキノコの味噌汁定食" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">昼食</span>
+              <h3 class="meal-title">豆腐とキノコの味噌汁定食</h3>
+              <div class="meal-meta">
+                <span>🔥 350kcal</span>
+                <span>⏱️ 15分</span>
+              </div>
+            </div>
+          </div>
+          <div class="meal-card" data-recipe="chicken-lemon">
+            <img src="images/grilled_chicken_salad.png" alt="鶏ささみのレモンペッパー焼き" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">夕食</span>
+              <h3 class="meal-title">鶏ささみのレモンペッパー焼き</h3>
+              <div class="meal-meta">
+                <span>🔥 390kcal</span>
+                <span>⏱️ 20分</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="daily-total">
+          <h3>1日の合計カロリー</h3>
+          <div class="total-calories">1,060kcal</div>
+        </div>
+      </div>
+
+      <!-- Friday -->
+      <div id="friday" class="day-content">
+        <div class="meals-grid">
+          <div class="meal-card" data-recipe="protein-pancake">
+            <img src="images/oatmeal_banana.png" alt="プロテインパンケーキ" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">朝食</span>
+              <h3 class="meal-title">プロテインパンケーキ</h3>
+              <div class="meal-meta">
+                <span>🔥 290kcal</span>
+                <span>⏱️ 15分</span>
+              </div>
+            </div>
+          </div>
+          <div class="meal-card" data-recipe="shrimp-avocado">
+            <img src="images/salmon_poke_bowl.png" alt="エビとアボカドのサラダ" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">昼食</span>
+              <h3 class="meal-title">エビとアボカドのサラダ</h3>
+              <div class="meal-meta">
+                <span>🔥 360kcal</span>
+                <span>⏱️ 15分</span>
+              </div>
+            </div>
+          </div>
+          <div class="meal-card" data-recipe="konjac-pad-thai">
+            <img src="images/tofu_steak_vegetables.png" alt="こんにゃく麺のパッタイ風" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">夕食</span>
+              <h3 class="meal-title">こんにゃく麺のパッタイ風</h3>
+              <div class="meal-meta">
+                <span>🔥 340kcal</span>
+                <span>⏱️ 25分</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="daily-total">
+          <h3>1日の合計カロリー</h3>
+          <div class="total-calories">990kcal</div>
+        </div>
+      </div>
+
+      <!-- Saturday -->
+      <div id="saturday" class="day-content">
+        <div class="meals-grid">
+          <div class="meal-card" data-recipe="granola">
+            <img src="images/smoothie_bowl.png" alt="フルーツとナッツのグラノーラ" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">朝食</span>
+              <h3 class="meal-title">フルーツとナッツのグラノーラ</h3>
+              <div class="meal-meta">
+                <span>🔥 310kcal</span>
+                <span>⏱️ 5分</span>
+              </div>
+            </div>
+          </div>
+          <div class="meal-card" data-recipe="chicken-pho">
+            <img src="images/salmon_poke_bowl.png" alt="鶏むね肉のフォー" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">昼食</span>
+              <h3 class="meal-title">鶏むね肉のフォー</h3>
+              <div class="meal-meta">
+                <span>🔥 380kcal</span>
+                <span>⏱️ 20分</span>
+              </div>
+            </div>
+          </div>
+          <div class="meal-card" data-recipe="tofu-burger">
+            <img src="images/tofu_steak_vegetables.png" alt="豆腐ハンバーグ" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">夕食</span>
+              <h3 class="meal-title">豆腐ハンバーグ</h3>
+              <div class="meal-meta">
+                <span>🔥 410kcal</span>
+                <span>⏱️ 30分</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="daily-total">
+          <h3>1日の合計カロリー</h3>
+          <div class="total-calories">1,100kcal</div>
+        </div>
+      </div>
+
+      <!-- Sunday -->
+      <div id="sunday" class="day-content">
+        <div class="meals-grid">
+          <div class="meal-card" data-recipe="egg-white">
+            <img src="images/greek_yogurt_berries.png" alt="エッグホワイトオムレツ" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">朝食</span>
+              <h3 class="meal-title">エッグホワイトオムレツ</h3>
+              <div class="meal-meta">
+                <span>🔥 260kcal</span>
+                <span>⏱️ 15分</span>
+              </div>
+            </div>
+          </div>
+          <div class="meal-card" data-recipe="tuna-avocado">
+            <img src="images/salmon_poke_bowl.png" alt="まぐろとアボカドの丼" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">昼食</span>
+              <h3 class="meal-title">まぐろとアボカドの丼</h3>
+              <div class="meal-meta">
+                <span>🔥 420kcal</span>
+                <span>⏱️ 10分</span>
+              </div>
+            </div>
+          </div>
+          <div class="meal-card" data-recipe="veggie-hotpot">
+            <img src="images/tofu_steak_vegetables.png" alt="野菜たっぷり鍋" class="meal-image">
+            <div class="meal-info">
+              <span class="meal-type">夕食</span>
+              <h3 class="meal-title">野菜たっぷり鍋</h3>
+              <div class="meal-meta">
+                <span>🔥 350kcal</span>
+                <span>⏱️ 25分</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="daily-total">
+          <h3>1日の合計カロリー</h3>
+          <div class="total-calories">1,030kcal</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recipe Gallery Section -->
+  <section id="recipes" class="recipe-gallery">
+    <div class="container">
+      <div class="section-header">
+        <h2>人気レシピ</h2>
+        <p class="section-subtitle">ダイエット中でも美味しく楽しめる、厳選レシピ</p>
+      </div>
+      <div class="recipe-grid">
+        <div class="recipe-card" data-recipe="greek-yogurt">
+          <img src="images/greek_yogurt_berries.png" alt="ギリシャヨーグルトとベリー" class="recipe-image">
+          <div class="recipe-info">
+            <h3 class="recipe-title">ギリシャヨーグルトとベリー</h3>
+            <div class="recipe-stats">
+              <span>🔥 250kcal</span>
+              <span>⏱️ 5分</span>
+            </div>
+          </div>
+        </div>
+        <div class="recipe-card" data-recipe="grilled-chicken">
+          <img src="images/grilled_chicken_salad.png" alt="鶏胸肉のグリルサラダ" class="recipe-image">
+          <div class="recipe-info">
+            <h3 class="recipe-title">鶏胸肉のグリルサラダ</h3>
+            <div class="recipe-stats">
+              <span>🔥 380kcal</span>
+              <span>⏱️ 20分</span>
+            </div>
+          </div>
+        </div>
+        <div class="recipe-card" data-recipe="tofu-steak">
+          <img src="images/tofu_steak_vegetables.png" alt="豆腐ステーキと野菜炒め" class="recipe-image">
+          <div class="recipe-info">
+            <h3 class="recipe-title">豆腐ステーキと野菜炒め</h3>
+            <div class="recipe-stats">
+              <span>🔥 420kcal</span>
+              <span>⏱️ 25分</span>
+            </div>
+          </div>
+        </div>
+        <div class="recipe-card" data-recipe="oatmeal">
+          <img src="images/oatmeal_banana.png" alt="オートミールとバナナ" class="recipe-image">
+          <div class="recipe-info">
+            <h3 class="recipe-title">オートミールとバナナ</h3>
+            <div class="recipe-stats">
+              <span>🔥 280kcal</span>
+              <span>⏱️ 10分</span>
+            </div>
+          </div>
+        </div>
+        <div class="recipe-card" data-recipe="salmon-poke">
+          <img src="images/salmon_poke_bowl.png" alt="サーモンのポキボウル" class="recipe-image">
+          <div class="recipe-info">
+            <h3 class="recipe-title">サーモンのポキボウル</h3>
+            <div class="recipe-stats">
+              <span>🔥 450kcal</span>
+              <span>⏱️ 15分</span>
+            </div>
+          </div>
+        </div>
+        <div class="recipe-card" data-recipe="smoothie-bowl">
+          <img src="images/smoothie_bowl.png" alt="スムージーボウル" class="recipe-image">
+          <div class="recipe-info">
+            <h3 class="recipe-title">スムージーボウル</h3>
+            <div class="recipe-stats">
+              <span>🔥 300kcal</span>
+              <span>⏱️ 10分</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nutrition Section -->
+  <section id="nutrition" class="nutrition">
+    <div class="container">
+      <div class="section-header">
+        <h2>ダイエット成功のポイント</h2>
+        <p class="section-subtitle">健康的に痩せるための基本知識</p>
+      </div>
+      <div class="nutrition-content">
+        <ul class="nutrition-points">
+          <li><strong>バランスの良い食事:</strong> タンパク質、炭水化物、脂質を適切な比率で摂取することが重要です。</li>
+          <li><strong>適切なカロリー管理:</strong> 1日1,200〜1,400kcalを目安に、無理のない範囲で調整しましょう。</li>
+          <li><strong>高タンパク質:</strong> 筋肉を維持しながら脂肪を減らすため、タンパク質を十分に摂りましょう。</li>
+          <li><strong>食物繊維:</strong> 野菜や海藻類で満腹感を得ながら、腸内環境を整えます。</li>
+          <li><strong>水分補給:</strong> 1日2リットル以上の水を飲むことで、代謝を促進します。</li>
+          <li><strong>規則正しい食事:</strong> 3食をしっかり食べることで、間食を防ぎ、代謝を安定させます。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 ダイエット簡単レシピ. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="recipeModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-close" onclick="closeModal()">&times;</div>
+      <img id="modalImage" src="" alt="" class="modal-image">
+      <div class="modal-body">
+        <h2 id="modalTitle" class="modal-title"></h2>
+        <div class="modal-meta">
+          <div class="modal-meta-item">
+            <div class="modal-meta-label">カロリー</div>
+            <div id="modalCalories" class="modal-meta-value"></div>
+          </div>
+          <div class="modal-meta-item">
+            <div class="modal-meta-label">調理時間</div>
+            <div id="modalTime" class="modal-meta-value"></div>
+          </div>
+          <div class="modal-meta-item">
+            <div class="modal-meta-label">タンパク質</div>
+            <div id="modalProtein" class="modal-meta-value"></div>
+          </div>
+        </div>
+        <div class="ingredients-list">
+          <h3>材料</h3>
+          <ul id="modalIngredients"></ul>
+        </div>
+        <div class="steps-list">
+          <h3>作り方</h3>
+          <ol id="modalSteps"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
